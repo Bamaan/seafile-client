@@ -47,6 +47,7 @@ FileBrowserDialog::FileBrowserDialog(const ServerRepo& repo, QWidget *parent)
 
     setWindowTitle(tr("File Browser"));
     setWindowIcon(QIcon(":/images/seafile.png"));
+    setWindowTitle(tr("Cloud File Browser - %1").arg(repo.name));
     setWindowFlags(windowFlags() & ~Qt::WindowContextHelpButtonHint);
 
     createToolBar();
